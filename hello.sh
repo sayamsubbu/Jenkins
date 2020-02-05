@@ -1,2 +1,2 @@
 echo "Hello world!!"
-This is second commit
+echo "This is second commit"
