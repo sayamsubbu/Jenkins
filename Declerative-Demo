@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        PATH = "/usr/share/maven/bin:$PATH"
+       PATH = "/usr/share/maven/bin:$PATH"
     }
     stages{
         stage("Git checkout"){
@@ -14,7 +14,7 @@ pipeline{
      stage("Maven buld"){
             steps{
                 
-                sh "mvn clean package"
+                echo "Hello world.............."
                 
             }
         }
