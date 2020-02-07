@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git checkout"){
+            steps{
+                git credentialsId: 'gith', url: 'https://github.com/sayamsubbu/Jenkins.git'
+                echo "Hello World"
+                
+            }
+        }
+    }
+}
